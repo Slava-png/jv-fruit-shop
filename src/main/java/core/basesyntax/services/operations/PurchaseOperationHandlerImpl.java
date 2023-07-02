@@ -2,7 +2,7 @@ package core.basesyntax.services.operations;
 
 import core.basesyntax.model.Fruit;
 
-public class PurchaseOperationHandlerImpl implements OperationHandler{
+public class PurchaseOperationHandlerImpl implements OperationHandler {
     @Override
     public void handler(Fruit fruit, int amount) {
         fruit.setQuantity(fruit.getQuantity() - amount);

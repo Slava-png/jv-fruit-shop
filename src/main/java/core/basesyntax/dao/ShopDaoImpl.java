@@ -6,7 +6,7 @@ import core.basesyntax.storage.Storage;
 public class ShopDaoImpl implements ShopDao {
     @Override
     public boolean contains(String fruitName) {
-        for (Fruit fruit: Storage.storage) {
+        for (Fruit fruit: Storage.getStorage()) {
             if (fruit.getName().equals(fruitName)) {
                 return true;
             }
@@ -16,7 +16,7 @@ public class ShopDaoImpl implements ShopDao {
 
     @Override
     public Fruit get(String fruitName) {
-        for (Fruit fruit: Storage.storage) {
+        for (Fruit fruit: Storage.getStorage()) {
             if (fruit.getName().equals(fruitName)) {
                 return fruit;
             }
@@ -26,6 +26,6 @@ public class ShopDaoImpl implements ShopDao {
 
     @Override
     public void add(String fruit) {
-        Storage.storage.add(new Fruit(fruit));
+        Storage.getStorage().add(new Fruit(fruit));
     }
 }

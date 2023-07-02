@@ -2,7 +2,6 @@ package core.basesyntax.services.implementations;
 
 import core.basesyntax.model.FruitTransaction;
 import core.basesyntax.services.Parser;
-
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,7 +25,7 @@ public class ParserImpl implements Parser {
     public FruitTransaction.Operation defineOperation(String operationType) {
         FruitTransaction.Operation[] operations = FruitTransaction.Operation.values();
 
-        for (FruitTransaction.Operation operation: operations ) {
+        for (FruitTransaction.Operation operation: operations) {
             if (operationType.equals(operation.getOperation())) {
                 return operation;
             }

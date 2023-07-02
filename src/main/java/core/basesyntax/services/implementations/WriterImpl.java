@@ -2,7 +2,6 @@ package core.basesyntax.services.implementations;
 
 import com.opencsv.CSVWriter;
 import core.basesyntax.services.Writer;
-
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;

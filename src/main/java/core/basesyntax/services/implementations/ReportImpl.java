@@ -3,7 +3,6 @@ package core.basesyntax.services.implementations;
 import core.basesyntax.model.Fruit;
 import core.basesyntax.services.Report;
 import core.basesyntax.storage.Storage;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -16,8 +15,8 @@ public class ReportImpl implements Report {
         List<String[]> report = new ArrayList<>();
         report.add(new String[] {FRUIT, QUANTITY});
 
-        for (int i = 0; i < Storage.storage.size(); i++) {
-            Fruit fruit = Storage.storage.get(i);
+        for (int i = 0; i < Storage.getStorage().size(); i++) {
+            Fruit fruit = Storage.getStorage().get(i);
             report.add(new String[] {fruit.getName(), String.valueOf(fruit.getQuantity())});
         }
 
