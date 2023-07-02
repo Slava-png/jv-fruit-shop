@@ -2,8 +2,11 @@ package core.basesyntax.strategy;
 
 import core.basesyntax.dao.ShopDao;
 import core.basesyntax.model.FruitTransaction;
-import core.basesyntax.services.operations.*;
-
+import core.basesyntax.services.operations.BalanceOperationHandlerImpl;
+import core.basesyntax.services.operations.PurchaseOperationHandlerImpl;
+import core.basesyntax.services.operations.ReturnOperationHandlerImpl;
+import core.basesyntax.services.operations.SupplyOperationHandlerImpl;
+import core.basesyntax.services.operations.OperationHandler;
 import java.util.List;
 import java.util.Map;
 

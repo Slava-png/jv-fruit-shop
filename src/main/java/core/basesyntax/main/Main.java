@@ -1,6 +1,5 @@
 package core.basesyntax.main;
 
-import core.basesyntax.dao.ShopDao;
 import core.basesyntax.dao.ShopDaoImpl;
 import core.basesyntax.model.FruitTransaction;
 import core.basesyntax.services.Parser;
@@ -13,7 +12,6 @@ import core.basesyntax.services.implementations.ReportImpl;
 import core.basesyntax.services.implementations.WriterImpl;
 import core.basesyntax.strategy.OperationStrategy;
 import core.basesyntax.strategy.OperationStrategyImpl;
-
 import java.util.List;
 
 public class Main {
